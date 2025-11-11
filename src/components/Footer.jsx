@@ -13,8 +13,12 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="flex items-center mb-4 md:mb-0">
-            <span className="text-xl font-extrabold">AsmrProg</span>
-            <span className="text-primary text-2xl ml-1">●</span>
+            <button
+              onClick={() => scrollToSection('hero')}
+              className="text-xl font-extrabold hover:text-primary transition-colors cursor-pointer"
+            >
+              CYS's Portfolio
+            </button>
           </div>
           <ul className="flex flex-wrap justify-center gap-6 mb-0">
             <li>
@@ -22,15 +26,7 @@ const Footer = () => {
                 onClick={() => scrollToSection('features')}
                 className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors"
               >
-                Showcase
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => scrollToSection('about')}
-                className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors"
-              >
-                About
+                About Me
               </button>
             </li>
             <li>
@@ -51,10 +47,10 @@ const Footer = () => {
             </li>
             <li>
               <button
-                onClick={() => scrollToSection('contact')}
+                onClick={() => scrollToSection('career')}
                 className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors"
               >
-                Contact
+                Career
               </button>
             </li>
           </ul>
@@ -80,7 +76,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center text-gray-600 dark:text-gray-400 text-sm">
-          <p>&copy; 2025 AsmrProg Portfolio. All rights reserved.</p>
+          <p>&copy; 2025 Choi Yeong Sol. All rights reserved.</p>
         </div>
       </div>
     </footer>

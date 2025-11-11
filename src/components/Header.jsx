@@ -26,8 +26,12 @@ const Header = ({ darkMode, toggleDarkMode }) => {
         <div className="container mx-auto px-4">
           <nav className="flex justify-between items-center py-4">
             <div className="flex items-center">
-              <span className="text-xl font-extrabold">AsmrProg</span>
-              <span className="text-primary text-2xl ml-1">●</span>
+              <button
+                onClick={() => scrollToSection('hero')}
+                className="text-xl font-extrabold hover:text-primary transition-colors cursor-pointer"
+              >
+                CYS's Portfolio
+              </button>
             </div>
             <ul className="hidden md:flex space-x-8">
               <li>
@@ -35,15 +39,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                   onClick={() => scrollToSection('features')}
                   className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
                 >
-                  Showcase
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection('about')}
-                  className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
-                >
-                  About
+                  About Me
                 </button>
               </li>
               <li>
@@ -64,10 +60,10 @@ const Header = ({ darkMode, toggleDarkMode }) => {
               </li>
               <li>
                 <button
-                  onClick={() => scrollToSection('contact')}
+                  onClick={() => scrollToSection('career')}
                   className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
                 >
-                  Contact
+                  Career
                 </button>
               </li>
             </ul>
@@ -100,8 +96,12 @@ const Header = ({ darkMode, toggleDarkMode }) => {
         <div className="container mx-auto px-4 h-full flex flex-col">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
-              <span className="text-xl font-extrabold">AsmrProg</span>
-              <span className="text-primary text-2xl ml-1">●</span>
+              <button
+                onClick={() => scrollToSection('hero')}
+                className="text-xl font-extrabold hover:text-primary transition-colors"
+              >
+                CYS's Portfolio
+              </button>
             </div>
             <button onClick={closeMobileMenu} className="p-2">
               <FaTimes className="text-gray-600 dark:text-gray-400 text-2xl" />
@@ -113,15 +113,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                 onClick={() => scrollToSection('features')}
                 className="text-2xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
               >
-                Showcase
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => scrollToSection('about')}
-                className="text-2xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
-              >
-                About
+                About Me
               </button>
             </li>
             <li>
@@ -142,10 +134,10 @@ const Header = ({ darkMode, toggleDarkMode }) => {
             </li>
             <li>
               <button
-                onClick={() => scrollToSection('contact')}
+                onClick={() => scrollToSection('career')}
                 className="text-2xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
               >
-                Contact
+                Career
               </button>
             </li>
           </ul>

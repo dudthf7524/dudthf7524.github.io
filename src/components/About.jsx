@@ -39,7 +39,7 @@ const About = () => {
               </a>
             </div>
           </div>
-          <div className="relative">
+          {/* <div className="relative">
             <div className="w-72 h-72 mx-auto animate-morph bg-gradient-to-br from-primary via-secondary to-accent rounded-full relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/50 via-secondary/50 to-accent/50 rounded-full blur-2xl animate-morph"></div>
               <img
@@ -48,7 +48,7 @@ const About = () => {
                 className="absolute inset-0 w-full h-full object-cover z-10"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

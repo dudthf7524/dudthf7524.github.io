@@ -29,11 +29,12 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-24 translate-y-4 transition-all duration-500 opacity-0">
+    <section id="projects"
+      className="py-24 bg-gray-50 dark:bg-dark-background-secondary translate-y-4 transition-all duration-500 opacity-0"
+    >
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Featured Projects</h2>
+        <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-4">PROJECTS</h2>
         <p className="text-xl text-gray-600 dark:text-gray-400 text-center mb-16">
-          Check out some of my recent work
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

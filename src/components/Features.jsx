@@ -1,26 +1,36 @@
-import { FaPaintBrush, FaCode, FaBolt, FaMobileAlt } from 'react-icons/fa';
+import { FaUser, FaCalendarAlt, FaMapMarkerAlt, FaPhone, FaEnvelope, FaGraduationCap } from 'react-icons/fa';
 
 const Features = () => {
   const features = [
     {
-      icon: <FaPaintBrush className="text-primary text-xl" />,
-      title: 'Modern UI Design',
-      description: 'Creating beautiful, responsive interfaces that look great on any device using the latest design trends.'
+      icon: <FaUser className="text-primary text-xl" />,
+      title: '이름',
+      description: '최영솔'
     },
     {
-      icon: <FaCode className="text-primary text-xl" />,
-      title: 'Clean Code',
-      description: 'Writing maintainable, efficient code following best practices and modern development standards.'
+      icon: <FaCalendarAlt className="text-primary text-xl" />,
+      title: '생년월일',
+      description: '97.05.24'
     },
     {
-      icon: <FaBolt className="text-primary text-xl" />,
-      title: 'Performance Optimization',
-      description: 'Ensuring fast load times and smooth experiences through efficient code and asset optimization.'
+      icon: <FaMapMarkerAlt className="text-primary text-xl" />,
+      title: '위치',
+      description: '경상북도 경산시'
     },
     {
-      icon: <FaMobileAlt className="text-primary text-xl" />,
-      title: 'Responsive Development',
-      description: 'Building websites that work flawlessly across all screen sizes, from phones to large displays.'
+      icon: <FaPhone className="text-primary text-xl" />,
+      title: '연락처',
+      description: '010-7751-4068'
+    },
+    {
+      icon: <FaEnvelope className="text-primary text-xl" />,
+      title: '이메일',
+      description: 'dudthf7524@naver.com'
+    },
+    {
+      icon: <FaGraduationCap className="text-primary text-xl" />,
+      title: '학력',
+      description: '영남대학교 기계공학부'
     }
   ];
 
@@ -30,12 +40,10 @@ const Features = () => {
       className="py-24 bg-gray-50 dark:bg-dark-background-secondary translate-y-4 transition-all duration-500 opacity-0"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">What's in my Toolkit</h2>
+        <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-4">ABOUT ME</h2>
         <p className="text-xl text-gray-600 dark:text-gray-400 text-center mb-16">
-          Everything needed to build great products on the web.
         </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div
               key={index}

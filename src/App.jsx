@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Features from './components/Features';
 import About from './components/About';
 import Skills from './components/Skills';
+import Career from './components/Career';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -58,10 +59,11 @@ function App() {
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Hero />
       <Features />
-      <About />
+      {/* <About /> */}
       <Skills />
       <Projects />
-      <Contact />
+      <Career />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );

@@ -41,15 +41,23 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-     
+
             <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
               cys's portfolio
-            </span>{' '}
-            For The Web
+            </span>
+            <br />
+
+
+          </h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            Backend Developer
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8">
-            Creating <strong>high-quality web applications</strong> with modern tools and best practices for
-            exceptional user experiences.
+            서비스의
+            <strong> 근본적인 문제를 분석하고, 원인에 집중하여 지속 가능한 성장 구조</strong>
+            를
+            <br />
+            설계하는 백엔드 개발자 최영솔입니다.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <button
