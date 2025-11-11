@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "npm run build && cp -r dist/* . && git add . && git commit -m \"Deploy updated portfolio\" && git push origin master"
+    "deploy": "npm run build && xcopy /E /I /Y dist\\* . && git add . && git commit -m \"Deploy updated portfolio\" && git push origin master"
   },
   "dependencies": {
     "react": "^19.1.1",
